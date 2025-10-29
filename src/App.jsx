@@ -1,7 +1,6 @@
 import "./App.css"; // imports our styles 
 import { useState, useRef } from "react"; // import the useState React Hook
 import html2canvas from 'html2canvas'; 
-
 // define my images array in their initial order
 const initialImages = [
   { id: 1, url: "./images/1.jpg", title: "One"},
