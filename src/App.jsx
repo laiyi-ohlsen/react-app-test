@@ -3,9 +3,9 @@ import { useState, useRef } from "react"; // import the useState React Hook
 import html2canvas from 'html2canvas'; 
 // define my images array in their initial order
 const initialImages = [
-  { id: 1, url: "./images/1.jpg", title: "One"},
-  {id: 2, url: "./images/2.png", title: "Two"},
-  {id: 3, url: "./images/3.jpg", title: "Three"}, 
+  { id: 1, url: "${base}images/1.jpg", title: "One"},
+  {id: 2, url: "${base}images/2.png", title: "Two"},
+  {id: 3, url: "${base}images/3.jpg", title: "Three"}, 
 ]
 
 // defining Gallery component
