@@ -1,0 +1,40 @@
+/* Container for gallery items */
+.gallery {
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+  flex-wrap: wrap; /* allows multiple rows */
+}
+
+/* Individual gallery item */
+.gallery-item {
+  padding: 4px;
+  border: 1px solid black;
+  border-radius: 8px;
+  transition: all 0.2s;
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* When an item is being dragged */
+.gallery-item.dragged {
+  opacity: 0.5;
+  border-style: dashed;
+}
+
+/* Hovered drop target */
+.gallery-item.hovered {
+  outline: 3px solid #4a90e2;
+}
+
+/* Images inside gallery items */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
